@@ -8,7 +8,7 @@ const DrumPad = props => {
         aud.play();
     }
     return (
-        <div className="drum-pad" id={`${props.audioDescription}`} onClick={playSound}>{props.keyboardKey}<audio className="clip" id={`${props.keyboardKey}`} src={`./media/${props.audioFile}`} />
+        <div className="drum-pad" id={`${props.audioDescription}`} onClick={playSound}>{props.keyboardKey}<audio className="clip" id={`${props.keyboardKey}`} src={`./media/sounds/${props.audioFile}`} />
         </div>
     )
 }

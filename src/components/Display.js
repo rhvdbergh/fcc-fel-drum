@@ -5,7 +5,7 @@ const Display = () => {
     return (
         <div id="display">
             <DrumPad audioDescription="cow" keyboardKey="Q" audioFile="audio_hero_s-cow-moo.mp3" />
-            <DrumPad audioDescription="goat" keyboardKey="W" />
+            <DrumPad audioDescription="goat" keyboardKey="W" audioFile="audio_hero_s-cow-moo.mp3" />
             <DrumPad audioDescription="cat" keyboardKey="E" />
             <DrumPad audioDescription="dog" keyboardKey="A" />
             <DrumPad audioDescription="cow" keyboardKey="S" />
