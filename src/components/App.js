@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import DrumMachine from './DrumMachine';
 
 const App = () => {
-    return (<DrumMachine />);
-}
+  return <DrumMachine />;
+};
 
 ReactDOM.render(<App />, document.getElementById('root'));
