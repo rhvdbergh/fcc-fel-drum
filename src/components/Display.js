@@ -4,7 +4,7 @@ import DrumPad from './DrumPad';
 const Display = () => {
     return (
         <div id="display">
-            <DrumPad audioDescription="sheep" keyboardKey="Q" />
+            <DrumPad audioDescription="cow" keyboardKey="Q" audioFile="audio_hero_s-cow-moo.mp3" />
             <DrumPad audioDescription="goat" keyboardKey="W" />
             <DrumPad audioDescription="cat" keyboardKey="E" />
             <DrumPad audioDescription="dog" keyboardKey="A" />
