@@ -44,6 +44,15 @@ a {
   font-family: 'IBM Plex Sans', sans-serif;
   color: green;
   border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.drum-pad:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.drum-pad:active {
+  transform: scale(1) rotate (-5deg);
 }
 
 #currentlyPlaying {
