@@ -1,10 +1,30 @@
 body,
 html {
     height: 100%;
-    font-size: 1.3em;
+    font-size: 1em;
+    position: relative;
+}
+
+body {
+    background-color: rgb(67, 120, 236);
 }
 
 img {
-    width: 320px;
-    height: 240px;
+    width: 160px;
+    height: 120px;
+}
+
+#display {
+    text-align: center;
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drum-pad {
+    border: 5px solid yellow;
+    background-color: 5px solid yellow;
 }
