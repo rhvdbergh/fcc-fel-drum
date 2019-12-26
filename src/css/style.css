@@ -3,3 +3,8 @@ html {
     height: 100%;
     font-size: 1.3em;
 }
+
+img {
+    width: 320px;
+    height: 240px;
+}

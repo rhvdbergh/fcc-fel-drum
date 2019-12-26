@@ -23,7 +23,12 @@ const DrumPad = props => {
     }, [])
 
     return (
-        <div className="drum-pad" id={`${props.audioDescription}`} onClick={playSound}>{props.keyboardKey}<audio className="clip" id={`${props.keyboardKey}`} src={`./media/sounds/${props.audioFile}`} />
+        <div className="drum-pad" id={`${props.audioDescription}`} onClick={playSound}>
+            <div id="drum-pad-text">{props.keyboardKey} </div>
+            <div className="drum-pad-image-container">
+                <img src={`./media/pics/${props.image}`} alt={props.imageAlt} />
+            </div>
+            <audio className="clip" id={`${props.keyboardKey}`} src={`./media/sounds/${props.audioFile}`} />
         </div>
     )
 }

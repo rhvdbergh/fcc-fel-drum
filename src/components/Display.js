@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import DrumPad from './DrumPad';
+import animals from '../animals';
 
 const Display = () => {
 
@@ -12,16 +13,16 @@ const Display = () => {
     return (
         <div id="display">
             <div>{currentlyPlaying}</div>
-            <DrumPad audioDescription="cow" keyboardKey="Q" audioFile="audio_hero_s-cow-moo.mp3" displayAnimal={setPlaying} />
-            <DrumPad audioDescription="goose" keyboardKey="W" audioFile="animals_bird_goose_honk_twice.mp3" displayAnimal={setPlaying} />
-            <DrumPad audioDescription="cat" keyboardKey="E" audioFile="animal_cat_meow.mp3" displayAnimal={setPlaying} />
-            <DrumPad audioDescription="dog" keyboardKey="A" audioFile="ftus_animals_dog_bark_aggressive_242.mp3" displayAnimal={setPlaying} />
-            <DrumPad audioDescription="horse" keyboardKey="S" audioFile="audio_hero_s-horse-whinny.mp3" displayAnimal={setPlaying} />
-            <DrumPad audioDescription="pig" keyboardKey="D" audioFile="zapsplat_animals_pig_grunt_snort_002_17838.mp3" displayAnimal={setPlaying} />
-            <DrumPad audioDescription="sheep" keyboardKey="Z" audioFile="animals_sheep_bleat_002.mp3" displayAnimal={setPlaying} />
-            <DrumPad audioDescription="chicken" keyboardKey="X" audioFile="felix_blume_animals_chicken_cluck_single.mp3" displayAnimal={setPlaying} />
-            <DrumPad audioDescription="duck" keyboardKey="C" audioFile="animal_bird_duck_quack_003.mp3" displayAnimal={setPlaying} />
-            <div id="attribution">Sound effects obtained from <a href="https://www.zapsplat.com">https://www.zapsplat.com</a>.</div>
+            <DrumPad audioDescription="cow" keyboardKey="Q" audioFile={animals.cow.audioFile} image={animals.cow.image} imageAlt={animals.cow.imageAlt} displayAnimal={setPlaying} />
+            <DrumPad audioDescription="goose" keyboardKey="W" audioFile={animals.goose.audioFile} image={animals.goose.image} imageAlt={animals.goose.imageAlt} displayAnimal={setPlaying} />
+            <DrumPad audioDescription="cat" keyboardKey="E" audioFile={animals.cat.audioFile} image={animals.cat.image} imageAlt={animals.cat.imageAlt} displayAnimal={setPlaying} />
+            <DrumPad audioDescription="dog" keyboardKey="A" audioFile={animals.dog.audioFile} image={animals.dog.image} imageAlt={animals.dog.imageAlt} displayAnimal={setPlaying} />
+            <DrumPad audioDescription="horse" keyboardKey="S" audioFile={animals.horse.audioFile} image={animals.horse.image} imageAlt={animals.horse.imageAlt} displayAnimal={setPlaying} />
+            <DrumPad audioDescription="pig" keyboardKey="D" audioFile={animals.pig.audioFile} image={animals.pig.image} imageAlt={animals.pig.imageAlt} displayAnimal={setPlaying} />
+            <DrumPad audioDescription="sheep" keyboardKey="Z" audioFile={animals.sheep.audioFile} image={animals.sheep.image} imageAlt={animals.sheep.imageAlt} displayAnimal={setPlaying} />
+            <DrumPad audioDescription="chicken" keyboardKey="X" audioFile={animals.chicken.audioFile} image={animals.chicken.image} imageAlt={animals.chicken.imageAlt} displayAnimal={setPlaying} />
+            <DrumPad audioDescription="duck" keyboardKey="C" audioFile={animals.duck.audioFile} image={animals.duck.image} imageAlt={animals.duck.imageAlt} displayAnimal={setPlaying} />
+            <div id="attribution">Sound effects obtained from <a href="https://www.zapsplat.com">https://www.zapsplat.com</a>. Photos found on <a href="https://www.unsplash.com">https://www.unsplash.com</a>.</div>
         </div>
     )
 }
